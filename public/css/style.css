@@ -20,6 +20,13 @@
 }
 
 @font-face {
+    font-family: "GothamPro-light";
+    src: url('../fonts/GothamPro/GothamProLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Hitch-hike";
     src: url('../fonts/Hitch-hike.otf');
     font-weight: normal;
@@ -45,6 +52,7 @@ header {
     background: #ffffff;
     position: fixed;
     top: 0;
+    z-index: 1003;
 }
 
 .carcass {
@@ -56,11 +64,22 @@ header {
     border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
+.header-image-placeholder {
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+
 .header-image {
     width: 100%;
-    height: 135px;
-    background: url('../images/header-image.png') repeat-x center 0;
+    height: 75px;
+    background: url('../images/header-image.png') repeat-x;
+    background-position: 0 -28px;
     background-size: 1348px;
+    position: fixed;
+    top: 139px;
+    z-index: 1002;
+    /*border: 1px solid black;*/
 }
 
 .logo {
@@ -188,4 +207,221 @@ a .order-block-text {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+}
+
+.main-products {
+    width: 100%;
+    padding-top: 75px;
+    background: #FCC200;
+    margin-top: -74px;
+    padding-bottom: 10px;
+}
+
+.main-products-carcass {
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*border: 1px solid black;*/
+}
+
+.product {
+    width: 580px;
+    height: 260px;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    display: inline-block;
+    margin-right: 17px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+.product:nth-child(2n) {
+    margin-right: 0;
+}
+
+.product-image-preview {
+    width: 290px;
+    height: inherit;
+    margin: 0;
+    float: left;
+    /*border: 1px solid black;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image-preview > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.product-info {
+    width: 280px;
+    height: 260px;
+    float: right;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.product-info > .title {
+    text-align: center;
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 16px;
+    color: #282828;
+    margin-top: 25px;
+}
+
+.product-info > .description {
+    text-align: center;
+    font-family: GothamPro-light, sans-serif;
+    font-size: 14px;
+    color: #282828;
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.product-info > .price {
+    width: 154px;
+    height: 42px;
+    margin: 20px auto;
+    position: relative;
+    /*border: 1px solid black;*/
+}
+
+.product-info > .price > ul {
+    padding-left: 0;
+    float: left;
+}
+
+.product-info > .price > ul li {
+    list-style-type: none;
+    font-family: GothamPro, sans-serif;
+    font-size: 14px;
+    color: #969696;
+    width: 49px;
+    height: 19px;
+    border: 1px solid #FCC200;
+    text-align: center;
+    background: rgba(0,0,0,0);
+    line-height: 19px;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.product-info > .price > ul li:hover,
+.product-info > .price > ul li.active{
+    background: #FCC200;
+    color: #000000;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.product-info > .price > .price-value {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 24px;
+    color: #FCC200;
+    float: right;
+    margin-top: 5px;
+}
+
+.product-info > .card {
+    text-align: center;
+}
+
+.product-info > .card > button {
+    background: rgba(0,0,0,0);
+    border: 1px solid #FCC200;
+    width: 209px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #FCC200;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.product-info > .card > button:hover {
+    background: #FCC200;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.product-info > .card > button:focus {
+    outline: none;
+}
+
+.load-more-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.load-more-button > button {
+    border: 1px solid rgba(0,0,0,0);
+    background: #FFFFFF;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #1D1D1B;
+    width: 183px;
+    height: 46px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.load-more-button > button:hover {
+    color: #FFFFFF;
+    background: rgba(0,0,0,0);
+    border: 1px solid #FFFFFF;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.load-more-button > button:focus {
+    outline: none;
 }
