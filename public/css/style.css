@@ -193,6 +193,12 @@ header {
 .order-block-icon > img {
     width: 68px;
     height: 68px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .order-block-text {
@@ -207,6 +213,20 @@ a .order-block-text {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+}
+
+a .order-block:hover > .order-block-icon > img {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .main-products {
@@ -227,7 +247,7 @@ a .order-block-text {
 .product {
     width: 580px;
     height: 260px;
-    border: 1px solid rgba(0,0,0,0);
+    border: 0 solid rgba(0,0,0,0);
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -238,6 +258,10 @@ a .order-block-text {
     overflow: hidden;
     position: relative;
     padding: 0;
+
+    -webkit-box-shadow: 3px 3px 10px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 3px 10px 4px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 10px 4px rgba(0,0,0,0.2);
 }
 
 .product:nth-child(2n) {
@@ -384,6 +408,82 @@ a .order-block-text {
     outline: none;
 }
 
+.product-info > .card > button::-moz-focus-inner {
+    border: 0;
+}
+
+.pre-order-settings {
+    width: 218px;
+    height: 40px;
+    border: 1px solid #FCC200;
+    background: #FCC200;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.pre-order-settings > .text {
+    width: 129px;
+    height: inherit;
+    float: left;
+    text-align: center;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #1D1D1B;
+    line-height: 38px;
+}
+
+.pre-order-settings > .count {
+    width: 45px;
+    height: inherit;
+    background: #ffffff;
+    float: left;
+    text-align: left;
+}
+
+.pre-order-settings > .count > .count-value {
+    font-family: GothamPro, sans-serif;
+    font-size: 27px;
+    color: #000000;
+    width: 10px;
+    height: 28px;
+    margin: 6px 0 0 11px;
+    float: left;
+}
+
+.pre-order-settings > .count > .settings-buttons {
+    width: 10px;
+    height: 33px;
+    text-align: center;
+    float: right;
+    margin-top: 2px;
+    margin-right: 4px;
+}
+
+.pre-order-settings > .count > .settings-buttons > img {
+    cursor: pointer;
+}
+
+.pre-order-settings > .done {
+    width: 42px;
+    height: inherit;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.pre-order-settings > .done > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
 .load-more-button {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -424,4 +524,192 @@ a .order-block-text {
 
 .load-more-button > button:focus {
     outline: none;
+}
+
+.load-more-button > button::-moz-focus-inner {
+    border: 0;
+}
+
+.special-menu {
+    background: #F2F2F2;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.block-title {
+    font-family: Hitch-hike, sans-serif;
+    font-size: 40px;
+    color: #E20613;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.delimiter {
+    width: 95px;
+    height: 5px;
+    background: url('../images/block-title-border.png') center no-repeat;
+    position: relative;
+    margin: 14px auto 0 auto;
+}
+
+.block-description {
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #282828;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+}
+
+.price-special {
+    width: 154px;
+    height: 42px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+}
+
+.price-special > .price-value {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 24px;
+    color: #FCC200;
+    margin-top: 5px;
+}
+
+.free-space {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.drink-menu {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    position: relative;
+}
+
+.drink-products-carcass {
+    width: 1180px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+    overflow: hidden;
+}
+
+.drink-product {
+    width: 270px;
+    height: inherit;
+    position: relative;
+    display: inline-block;
+    /*border: 1px solid black;*/
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.drink-product:nth-child(4n) {
+    margin-right: 0;
+}
+
+.drink-preview {
+    width: 270px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.drink-preview > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.drink-title {
+    text-align: center;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #282828;
+    margin-top: 20px;
+}
+
+.drink-price {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 24px;
+    color: #FCC200;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.drink-order-button {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.drink-order-button > button {
+    background: rgba(0,0,0,0);
+    border: 1px solid #FCC200;
+    width: 209px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #FCC200;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.drink-order-button > button:hover {
+    background: #FCC200;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.drink-order-button > button:focus {
+    outline: none;
+}
+
+.drink-order-button > button::-moz-focus-inner {
+    border: 0;
+}
+
+.order {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #F2F2F2;
+}
+
+.order-dashboard {
+    width: 1180px;
+    min-height: 614px;
+    margin: 50px auto;
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.2);
+    position: relative;
+    padding-top: 5px;
 }
