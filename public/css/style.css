@@ -713,3 +713,201 @@ a .order-block:hover > .order-block-icon > img {
     position: relative;
     padding-top: 5px;
 }
+
+.table {
+    width: 980px;
+    height: auto;
+    min-height: 50px;
+    margin: 50px auto 0 auto;
+    border-top: 1px solid black;
+    -moz-border-image: url('../images/misc/table-h-border.png') 30 stretch;
+    -webkit-border-image: url('../images/misc/table-h-border.png') 30 stretch ;
+    -o-border-image: url('../images/misc/table-h-border.png') 30 stretch;
+    border-image: url('../images/misc/table-h-border.png') 30 stretch;
+    position: relative;
+}
+
+.table > .row {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    -moz-border-image: url('../images/misc/table-h-border.png') 30 stretch;
+    -webkit-border-image: url('../images/misc/table-h-border.png') 30 stretch ;
+    -o-border-image: url('../images/misc/table-h-border.png') 30 stretch;
+    border-image: url('../images/misc/table-h-border.png') 30 stretch;
+}
+
+.table > .row > .order-col-title {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 15px;
+    color: #1D1D1B;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+    min-width: 185px;
+}
+
+.table > .row > .order-col-size {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 15px;
+    color: #1D1D1B;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+    min-width: 55px;
+}
+
+.table > .row > .order-col-count {
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+}
+
+.table > .row > .order-col-price {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 15px;
+    color: #1D1D1B;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.table > .row > .order-col-delete {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 15px;
+    color: #1D1D1B;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.order-col-count > span {
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 15px;
+    color: #1D1D1B;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.order-col-count > .count {
+    width: 45px;
+    height: inherit;
+    background: #ffffff;
+    float: right;
+    text-align: left;
+    border: 1px solid #FCC200;
+}
+
+.order-col-count > .count > .count-value {
+    font-family: GothamPro, sans-serif;
+    font-size: 27px;
+    color: #000000;
+    width: 10px;
+    height: 28px;
+    margin: 3px 0 0 11px;
+    float: left;
+}
+
+.order-col-count > .count > .settings-buttons {
+    width: 10px;
+    height: 33px;
+    text-align: center;
+    float: right;
+    margin-top: 2px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+.order-col-count > .count > .settings-buttons > img {
+    cursor: pointer;
+}
+
+.score::before,
+.score::after {
+    content: "";
+    display: table;
+}
+
+.score {
+    clear: both;
+    *zoom: 1;
+}
+
+.score::after {
+    clear: both;
+}
+
+.score-detail {
+    width: 200px;
+    height: 50px;
+    /*border: 1px solid black;*/
+    float: right;
+    margin-right: 200px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.score-detail > table {
+    width: 100%;
+}
+
+.score-detail > table tr td.left-side {
+    text-align: left;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #1D1D1B;
+}
+
+.score-detail > table tr td.right-side {
+    text-align: right;
+    font-family: GothamPro-medium, sans-serif;
+    font-size: 16px;
+    color: #1D1D1B;
+}
+
+.order-button {
+    text-align: center;
+    margin: 50px;
+}
+
+.order-button > button {
+    width: 218px;
+    height: 40px;
+    background: #FCC200;
+    border: 1px solid rgba(0, 0, 0, 0);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #1D1D1B;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.order-button > button:hover {
+    background: rgba(0,0,0,0);
+    color: #FCC200;
+    border: 1px solid #FCC200;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.order-button > button:focus {
+    outline: none;
+}
+
+.order-button > button::-moz-focus-inner {
+    border: 0;
+}
