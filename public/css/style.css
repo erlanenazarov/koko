@@ -732,6 +732,7 @@ a .order-block:hover > .order-block-icon > img {
     padding-bottom: 20px;
     width: 100%;
     border-bottom: 1px solid black;
+    position: relative;
     -moz-border-image: url('../images/misc/table-h-border.png') 30 stretch;
     -webkit-border-image: url('../images/misc/table-h-border.png') 30 stretch ;
     -o-border-image: url('../images/misc/table-h-border.png') 30 stretch;
@@ -910,4 +911,262 @@ a .order-block:hover > .order-block-icon > img {
 
 .order-button > button::-moz-focus-inner {
     border: 0;
+}
+
+
+/* ================================= Meta Viewport ===================================================*/
+@media screen and (max-width: 1170px) {
+    .carcass {
+        width: 1000px;
+    }
+
+    .product {
+        width: 480px;
+    }
+
+    .product > .product-image-preview {
+        width: 200px;
+    }
+
+    .order-dashboard {
+        width: 986px;
+    }
+
+    .table {
+        width: 804px;
+    }
+
+    .order-col-title {
+        margin-right: 43px;
+    }
+
+    .drink-products-carcass {
+        width: 901px;
+    }
+
+    .drink-product:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1031px) {
+    .carcass {
+        width: 800px;
+    }
+
+    .product {
+        width: 380px;
+    }
+
+    .product > .product-image-preview {
+        width: 159px;
+    }
+
+    .product > .product-info {
+        width: 220px;
+    }
+
+    .drink-products-carcass {
+        width: 712px;
+    }
+
+    .drink-product {
+        width: 202px;
+    }
+
+    .drink-preview {
+        width: 190px;
+    }
+
+    .order-dashboard {
+        width: 786px;
+    }
+
+    .table {
+        width: 727px;
+    }
+
+    .table > .row > .order-col-title {
+        margin-right: 19px;
+    }
+
+    .table > .row > .order-col-price {
+        width: 69px;
+    }
+
+    .score-detail {
+        margin-right: 35px;
+    }
+
+    .table > .row > .order-col-count {
+        margin-right: 46px;
+    }
+
+    .table > .row > .order-col-size {
+        margin-right: 56px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .carcass {
+        width: 750px;
+    }
+
+    .product {
+        width: 364px;
+    }
+
+    .product > .product-image-preview {
+        width: 129px;
+    }
+
+    .order-dashboard {
+        width: 740px;
+    }
+
+    .table {
+        width: 632px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header-placeholder {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .header-image-placeholder {
+        display: none;
+    }
+
+    .carcass {
+        width: 600px;
+    }
+
+    .main-products-carcass {
+        text-align: center;
+    }
+
+    .product {
+        margin-right: 0;
+    }
+
+    .drink-products-carcass {
+        width: 450px;
+    }
+
+    .drink-product:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .order-dashboard {
+        width: 637px;
+    }
+
+    .table {
+        width: 592px;
+    }
+
+    .table > .row > .order-col-size {
+        margin-right: 36px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .carcass {
+        width: 400px;
+    }
+
+    .order-dashboard {
+        width: 428px;
+    }
+
+    .table {
+        width: 373px;
+    }
+
+    .table > .row > .order-col-title {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .table > .row > .order-col-size {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .table > .row > .order-col-count {
+        display: block;
+    }
+
+    .table > .row > .order-col-price {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .table > .row > .order-col-delete {
+        float: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .drink-products-carcass {
+        width: 411px;
+    }
+    
+    .drink-product {
+        margin-right: 7px;
+    }
+
+    .drink-product > .drink-order-button > button {
+        width: 183px;
+    }
+}
+
+@media screen and (max-width: 453px) {
+    .carcass {
+        width: 295px;
+    }
+
+    .main-products-carcass {
+        padding-left: 0;
+    }
+
+    .product {
+        width: 280px;
+        position: relative;
+        height: 444px;
+    }
+    
+    .product > .product-image-preview {
+        width: 100%;
+        height: 177px;
+        float: none;
+    }
+
+    .product > .product-info {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .order-dashboard {
+        width: 299px;
+    }
+
+    .table {
+        width: 217px;
+    }
+
+    .drink-products-carcass {
+        width: 216px;
+    }
+
 }
