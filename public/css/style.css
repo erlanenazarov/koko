@@ -112,6 +112,7 @@ header {
     position: relative;
     margin: 0;
     padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
 .delivery-text {
@@ -317,7 +318,7 @@ a .order-block:hover > .order-block-icon > img {
 }
 
 .product-info > .price {
-    width: 154px;
+    width: 164px;
     height: 42px;
     margin: 20px auto;
     position: relative;
@@ -694,7 +695,7 @@ a .order-block:hover > .order-block-icon > img {
 
 .order {
     width: 100%;
-    height: auto;
+    min-height: 700px;
     position: relative;
     background: #F2F2F2;
 }
@@ -1169,4 +1170,227 @@ a .order-block:hover > .order-block-icon > img {
         width: 216px;
     }
 
+}
+
+.contacts {
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+    background: #F2F2F2;
+    position: relative;
+}
+
+.contacts-map {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.pre-contacts {
+    margin-top: 40px;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #080808;
+    display: none;
+}
+
+.post-contacts {
+    width: 304px;
+    height: 180px;
+    background: #FCC200;
+    -webkit-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.46);
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.46);
+    position: absolute;
+    left: 37px;
+    top: 39px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.post-contacts ul {
+    padding-left: 0;
+}
+
+.post-contacts ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.post-contacts ul li:last-child {
+    margin-bottom: 0;
+}
+
+.post-contacts ul li div {
+    float: left;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    vertical-align: top;
+}
+
+.post-contacts ul li div:first-child {
+    margin-right: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 133px;
+    background: #282828;
+    position: relative;
+}
+
+footer > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.md-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2000;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+
+@-moz-keyframes appear {
+    from {top: -500px}
+    to{top: 50%}
+}
+
+@keyframes appear {
+    from {top: -500px}
+    to{top: 50%}
+}
+
+@-moz-keyframes disappear {
+    from{top: 50%}
+    to {top: -500px}
+}
+
+@keyframes disappear {
+    from{top: 50%}
+    to {top: -500px}
+}
+
+.md-window {
+    width: 750px;
+    height: 362px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    -webkit-animation-name: appear;
+    -moz-animation-name: appear;
+    -o-animation-name: appear;
+    animation-name: appear;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.md-window.close, .md-alert.close {
+    -webkit-animation-name: disappear;
+    -moz-animation-name: disappear;
+    -o-animation-name: disappear;
+    animation-name: disappear;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.form-group {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-group > input {
+    width: 580px;
+    height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    font-family: GothamPro, sans-serif;
+    font-size: 16px;
+    color: #080808;
+}
+
+.form-group > input:focus {
+    outline: none;
+}
+
+.form-group > input::-moz-focus-inner {
+    border: none;
+}
+
+.md-close {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.md-alert {
+    width: 489px;
+    height: 138px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    -webkit-animation-name: appear;
+    -moz-animation-name: appear;
+    -o-animation-name: appear;
+    animation-name: appear;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
 }
