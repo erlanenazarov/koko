@@ -36,7 +36,32 @@
         </div>
     </div>
 </div>
-<div class="header-placeholder"></div>
+<div class="fixed-header">
+    <div class="fixed-menu">
+        <ul>
+            <li><a href="#">главное</a></li>
+            <li><a href="#">специальное</a></li>
+            <li><a href="#">картофель</a></li>
+            <li><a href="#">салаты</a></li>
+            <li><a href="#">корзина</a></li>
+        </ul>
+    </div>
+</div>
+<div class="mobile-fixed-header">
+    <div class="child">
+        <div class="mobile-fixed-menu-trigger">меню</div>
+        <div class="mobile-fixed-menu score">
+            <ul>
+                <li><a href="#">главное</a></li>
+                <li><a href="#">специальное</a></li>
+                <li><a href="#">картофель</a></li>
+                <li><a href="#">салаты</a></li>
+                <li><a href="#">корзина</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="mobile-fixed-header-placeholder"></div>
 <header>
     <div class="carcass">
         <div class="logo"></div>
@@ -47,10 +72,10 @@
                 </div>
                 <div class="navigation-menu">
                     <ul>
-                        <li><a href="#">главная</a></li>
-                        <li><a href="#">блюды</a></li>
-                        <li><a href="#">меню</a></li>
-                        <li><a href="#">контакты</a></li>
+                        <li><a href="#">главное</a></li>
+                        <li><a href="#">специальное</a></li>
+                        <li><a href="#">картофель</a></li>
+                        <li><a href="#">салаты</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +92,6 @@
         </a>
     </div>
 </header>
-<div class="header-image-placeholder"></div>
 <div class="header-image"></div>
 <div class="main-products">
     <div class="carcass">
@@ -644,7 +668,17 @@
         $('#order-modal').fadeOut('fast', function() {
             $('.md-window').removeClass('close');
         });
-    })
+    });
+
+    $(document).ready(function() {
+        $(window).on('scroll', function() {
+            if($(window).scrollTop() > 140) {
+                $('.fixed-header').fadeIn('fast');
+            } else {
+                $('.fixed-header').fadeOut('fast');
+            }
+        });
+    });
 </script>
 </body>
 </html>
